@@ -1,0 +1,19 @@
+stages:
+  - test
+  - deploy
+
+validate-html:
+  stage: test
+  image: alpine:latest
+  script:
+    - test -s public/index.html
+    - grep -qi "<html" public/index.html
+    - grep -qi "<title" public/index.html
+
+deploy-pages:
+  stage: deploy
+  script:
+    - test -s public/index.html
+  pages: true
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
