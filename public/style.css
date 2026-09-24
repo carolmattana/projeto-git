@@ -52,6 +52,18 @@ main {
 .ident { list-style: none; padding: 0; margin: 0; }
 .ident li { padding: 3px 0; }
 
+.tool {
+  border-left: 4px solid var(--azul);
+  background: var(--fundo);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 14px 0;
+}
+.tool h3 { margin: 0 0 6px; color: var(--tinta); }
+.tool p { margin: 4px 0; }
+.tool a { color: var(--azul); text-decoration: none; }
+.tool a:hover { text-decoration: underline; }
+
 footer {
   text-align: center;
   color: var(--cinza);
