@@ -38,7 +38,7 @@ projeto-git/
 
 ## Autor
 
-- **Lucas R. Souza** — lucasrdsouza1@gmail.com
+- **Carol Mattana** — carol.mattana@acad.ufsm.br
 - Sistemas de Informação — UFSM
 
 ## Links do projeto (GitLab)
