@@ -5,8 +5,8 @@ disciplina de Qualidade de Software (UFSM — Sistemas de Informação,
 Prof. Joel da Silva).
 
 O objetivo é aplicar, na prática, o controle de versões com Git e o fluxo
-completo no GitLab: repositório remoto, issue, branch, merge request,
-integração contínua (pipeline) e publicação no GitLab Pages.
+completo no GitHub: repositório remoto, issue, branch, merge request,
+integração contínua (pipeline) e publicação no GitHub Pages.
 
 ## Como executar
 
@@ -43,8 +43,6 @@ projeto-git/
 
 ## Links do projeto (GitLab)
 
-<!-- Preencher após publicar no GitLab -->
-- Repositório: _a preencher_
-- Página publicada (GitLab Pages): _a preencher_
-- Issue: _a preencher_
-- Merge request: _a preencher_
+- Repositório: https://github.com/carolmattana/projeto-git
+- GitHub Pages: https://carolmattana.github.io/projeto-git/
+- Issue: https://github.com/carolmattana/projeto-git/issues/1
