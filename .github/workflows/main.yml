@@ -1,0 +1,38 @@
+name: CI - Qualidade do Projeto
+
+on:
+  push:
+    branches:
+      - principal
+  pull_request:
+    branches:
+      - principal
+
+jobs:
+  validar-projeto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Verificar arquivos do projeto
+        run: |
+          test -f public/index.html
+          test -f public/style.css
+          test -f README.md
+          echo "Arquivos principais encontrados com sucesso."
+
+      - name: Validar HTML
+        run: |
+          grep -q "<html" public/index.html
+          grep -q "</html>" public/index.html
+          echo "HTML validado com sucesso."
+
+      - name: Validar CSS
+        run: |
+          test -s public/style.css
+          echo "CSS encontrado e não está vazio."
+
+      - name: Pipeline concluído
+        run: echo "Validação do projeto concluída com sucesso."
